@@ -2,7 +2,7 @@
 function runBeepBoop(input) {
 
   if (isNaN(input)) {
-    alert('Please Enter a Number, Organic Meat Creature')
+    console.log('input is not a number');
   };
 
   var rangeNumbers = [];
@@ -26,7 +26,7 @@ function runBeepBoop(input) {
 
   console.log('input number: ' + input)
   console.log('number range: ' + rangeNumbers);
-  console.log('output' + outputNumbers);
+  console.log('output: ' + outputNumbers);
 
   $('.output').empty().append(outputNumbers.toString())
 

@@ -1,1 +1,7 @@
+.container {
+  text-align: center;
+}
 
+#user-input {
+  margin: 10px 0px;
+}
