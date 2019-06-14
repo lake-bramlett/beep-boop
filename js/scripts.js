@@ -33,8 +33,12 @@ function runBeepBoop(input) {
 };//function runBeepBoop
 
   function hal () {
-    for (i = 0; i < 9999; i++) {
-      $('img').fadeToggle(2500);
+    for (i = 0; i <= 10; i++) {
+      var opacityNum = '.' + i;
+      console.log('opacity: ' + opacityNum);
+      setTimeout(function () {
+        $('img').css('opacity', opacityNum);
+      }, 2500)
     };
   };
 
