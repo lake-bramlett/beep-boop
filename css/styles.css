@@ -8,8 +8,29 @@ body {
 }
 
 .output {
-  min-height:50px;
+  min-height:75px;
+  padding: 0% 20%;
 }
+
+.halculator {
+  text-align: center;
+  margin-top: 2%;
+}
+
+
+.halculator h1 .halborder {
+  border: 3px solid #ffffff;
+  padding-right: 20px;
+}
+
+.halculator h1 .bg {
+  display: inline;
+  background-color: #5cb1ef;
+  padding-left: 20px;
+  padding-right: 3px;
+  margin-right: 5px;
+}
+
 
 .hal {
   background-image: url('../img/hal.jpg');

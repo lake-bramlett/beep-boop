@@ -14,7 +14,7 @@ function runBeepBoop(input) {
 
   rangeNumbers.forEach(function(i) {
     if (i.toString().indexOf('3')  >= 0) {
-      outputNumbers.push(" <em>I'm sorry, Dave. I'm afraid I can't do that.</em>");
+      outputNumbers.push(" <em>I'm sorry, Dave. I'm afraid I can't do that</em>");
     } else if (i.toString().indexOf('2')  >= 0) {
       outputNumbers.push(" <strong>Boop!</strong>");
     } else if (i.toString().indexOf('1')  >= 0) {
