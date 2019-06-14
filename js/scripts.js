@@ -2,6 +2,13 @@
 function runBeepBoop(num) {
   console.log('input number: ' + num);
 
+  var rangeNumbers = [];
+
+  for (i = 0; i <= num; i++) {
+    rangeNumbers.push(i);
+    console.log('number range: ' + rangeNumbers);
+  };
+
 
 };//function runBeepBoop
 
