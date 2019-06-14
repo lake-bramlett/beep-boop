@@ -1,5 +1,18 @@
+body {
+  background-color: #000000;
+  color: #ffffff
+}
+
 .container {
   text-align: center;
+}
+
+.output {
+  min-height:50px;
+}
+
+img {
+  display: none;
 }
 
 #user-input {

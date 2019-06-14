@@ -32,7 +32,11 @@ function runBeepBoop(input) {
 
 };//function runBeepBoop
 
-
+  function hal () {
+    for (i = 0; i < 9999; i++) {
+      $('img').fadeToggle(2500);
+    };
+  };
 
 
 //user interface logic///
@@ -41,6 +45,7 @@ $(document).ready(function () {
 
   $('form button').click(function () {
     runBeepBoop(parseInt($('input#user-input').val()));
+    hal();
   });//click event
 
 });//jquery
