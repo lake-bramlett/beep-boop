@@ -3,7 +3,6 @@ function runBeepBoop(input) {
   console.log('input number: ' + input);
 
   var rangeNumbers = [];
-  var outputNumbers = []
 
   for (i = 0; i <= input; i++) {
     rangeNumbers.push(i);
@@ -11,18 +10,18 @@ function runBeepBoop(input) {
   };//for loop to get rangeNumbers
 
   rangeNumbers.forEach(function(i) {
-    if (i === 3) {
-      outputNumbers.push("I'm sorry, Dave. I'm afraid I can't do that.");
-    } else if (i === 2) {
-      outputNumbers.push("Boop!")
-    } else if (i === 1) {
-      outputNumbers.push("Beep!")
+    if (i.toString().indexOf('3')  > -1) {
+      $('.output').append("<em>I'm sorry, Dave. I'm afraid I can't do that.</em>")
+    } else if (i.toString().indexOf('2')  > -1) {
+      $('.output').append("<em>Boop!</em>")
+    } else if (i.toString().indexOf('1')  > -1) {
+      $('.output').append("<em>Beep!</em>")
     } else {
-      outputNumbers.push(i);
+      $('.output').append(i);
     };// if/else
   });//rangeNumbers.forEach
 
-  console.log('output numbers are: ' + outputNumbers);
+  console.log('var rangeNumbers is a : ' + typeof rangeNumbers)
 
 };//function runBeepBoop
 
