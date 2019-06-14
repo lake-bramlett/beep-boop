@@ -3,6 +3,10 @@ body {
   color: #ffffff
 }
 
+form {
+  margin: 2% 0%;
+}
+
 input {
   text-align: center;
 }
@@ -26,8 +30,9 @@ label, .output {
 }
 
 .output {
-  min-height:75px;
+  min-height:100px;
   padding: 0% 20%;
+  margin-bottom: 3%;
 }
 
 .halculator {
@@ -71,5 +76,5 @@ label, .output {
 }
 
 #user-input {
-  margin: 10px 0px;
+  margin: 10px 0px 20px 0px;
 }
