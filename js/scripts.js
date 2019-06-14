@@ -29,18 +29,11 @@ function runBeepBoop(input) {
   console.log('output: ' + outputNumbers);
 
   $('.output').empty().append(outputNumbers.toString())
+  $("img").addClass("show");
 
 };//function runBeepBoop
 
-  function hal () {
-    for (i = 0; i <= 10; i++) {
-      var opacityNum = '.' + i;
-      console.log('opacity: ' + opacityNum);
-      setTimeout(function () {
-        $('img').css('opacity', opacityNum);
-      }, 2500)
-    };
-  };
+
 
 
 //user interface logic///
@@ -49,7 +42,7 @@ $(document).ready(function () {
 
   $('form button').click(function () {
     runBeepBoop(parseInt($('input#user-input').val()));
-    hal();
+
   });//click event
 
 });//jquery
