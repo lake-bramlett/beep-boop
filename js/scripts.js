@@ -29,7 +29,7 @@ function runBeepBoop(input) {
   console.log('output: ' + outputNumbers);
 
   $('.output').empty().append(outputNumbers.toString())
-  $("img").addClass("show");
+
 
 };//function runBeepBoop
 
@@ -40,9 +40,16 @@ function runBeepBoop(input) {
 $(document).ready(function () {
   console.log('jquery is enabled');
 
+  function halLoop () {
+    $('img').toggleClass('show hide');
+    setTimeout(function() {
+      halLoop() }, 5500);
+    };//function halLoop
+
+
   $('form button').click(function () {
     runBeepBoop(parseInt($('input#user-input').val()));
-
+    halLoop();
   });//click event
 
 });//jquery

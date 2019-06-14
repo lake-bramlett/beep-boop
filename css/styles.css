@@ -21,12 +21,13 @@ body {
   display: inline-block;
 }
 
-img {
-  opacity: 0;
-}
-
 .show {
   opacity: 1;
+  transition: 5s opacity;
+}
+
+.hide {
+  opacity: 0;
   transition: 5s opacity;
 }
 
