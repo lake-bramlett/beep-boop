@@ -1,28 +1,34 @@
 //business logic//
 function runBeepBoop(input) {
-  console.log('input number: ' + input);
+
+  if (isNaN(input)) {
+    alert('Please Enter a Number, Organic Meat Creature')
+  };
 
   var rangeNumbers = [];
   var outputNumbers = [];
 
   for (i = 0; i <= input; i++) {
     rangeNumbers.push(i);
-    console.log('number range: ' + rangeNumbers);
   };//for loop to get rangeNumbers
 
   rangeNumbers.forEach(function(i) {
     if (i.toString().indexOf('3')  >= 0) {
-      outputNumbers.push("I'm sorry, Dave. I'm afraid I can't do that.");
+      outputNumbers.push(" <em>I'm sorry, Dave. I'm afraid I can't do that.</em>");
     } else if (i.toString().indexOf('2')  >= 0) {
-      outputNumbers.push("Boop!");
+      outputNumbers.push(" <strong>Boop!</strong>");
     } else if (i.toString().indexOf('1')  >= 0) {
-      outputNumbers.push("Beep!");
+      outputNumbers.push(" <strong>Beep!</strong>");
     } else {
-        outputNumbers.push(i);
+        outputNumbers.push(' ' + i);
     };// if/else
   });//rangeNumbers.forEach
 
-  console.log(outputNumbers);
+  console.log('input number: ' + input)
+  console.log('number range: ' + rangeNumbers);
+  console.log('output' + outputNumbers);
+
+  $('.output').empty().append(outputNumbers.toString())
 
 };//function runBeepBoop
 
